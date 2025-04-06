@@ -30,7 +30,13 @@ An advanced Flutter application combining a **GPT-based chatbot**, **AI image ge
 
 ## 📸 Screenshots / Demo
 
-> _You can add screenshots or embed a short demo video here (see below for video embed instructions)._
+<img width="287" alt="Screenshot 2025-04-06 at 3 30 50 PM" src="https://github.com/user-attachments/assets/b5c74c85-d14e-4b58-941c-e62bba544400" />
+<img width="278" alt="Screenshot 2025-04-06 at 3 26 18 PM" src="https://github.com/user-attachments/assets/50abe2af-92e2-4403-a991-ad22926458f6" />
+<img width="293" alt="Screenshot 2025-04-06 at 3 27 43 PM" src="https://github.com/user-attachments/assets/eb80489f-ab60-4470-be6d-3d22da55feb5" />
+<img width="293" alt="Screenshot 2025-04-06 at 3 28 27 PM" src="https://github.com/user-attachments/assets/d86811e5-9f4b-4645-956b-b9363a1c0417" />
+<img width="293" alt="Screenshot 2025-04-06 at 3 29 48 PM" src="https://github.com/user-attachments/assets/5beb38bb-19b4-4d99-909b-f52645fa81db" />
+<img width="293" alt="Screenshot 2025-04-06 at 3 30 02 PM" src="https://github.com/user-attachments/assets/d26867cc-ecf3-4b19-a838-5a18cf2633c8" />
+
 
 ---
 
