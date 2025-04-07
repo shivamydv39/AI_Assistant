@@ -35,7 +35,7 @@ class ImageController extends GetxController {
           imageAIStyle: imageAIStyle,
         );
 
-        // Save image to temporary file
+      
         // Save image to temporary file
         final tempDir = await getTemporaryDirectory();
         final file = File('${tempDir.path}/stability_image_${DateTime.now().millisecondsSinceEpoch}.png');
@@ -66,7 +66,7 @@ class ImageController extends GetxController {
 
       log('url: $url');
 
-      final file = File(url.value); // Assume local file path
+      final file = File(url.value); 
       if (await file.exists()) {
         final bytes = await file.readAsBytes();
 
