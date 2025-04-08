@@ -47,8 +47,6 @@ dependencies:
   cached_network_image: ^3.4.1
   google_generative_ai: ^0.4.6
   translator_plus: ^1.0.1
-  #gallery_saver_updated: ^3.0.0
-  #image_gallery_saver: ^2.0.3
   share_plus: ^10.1.4
   icons_launcher: ^3.0.1
   flutter_lints: ^5.0.0
