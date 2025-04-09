@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:stability_image_generation/stability_image_generation.dart';
-
 import '../apis/apis.dart';
 import '../helper/global.dart';
 import '../helper/my_dialog.dart';
@@ -15,7 +14,7 @@ enum Status { none, loading, complete }
 class ImageController extends GetxController {
   final textC = TextEditingController();
 
-  final status = Status.none.obs;
+  final status = Status.none.obs; //reactive variable
 
   final url = ''.obs;
 
@@ -55,15 +54,9 @@ class ImageController extends GetxController {
     }
   }
 
-
-
-
-
-
   void downloadImage() async {
     try {
       MyDialog.showLoadingDialog();
-
       log('url: $url');
 
       final file = File(url.value); 

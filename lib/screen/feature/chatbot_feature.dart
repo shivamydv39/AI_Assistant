@@ -22,8 +22,6 @@ class _ChatBotFeatureState extends State<ChatBotFeature> {
       appBar: AppBar(
         title: const Text('Chat with AI Assistant'),
       ),
-
-      //send message field & btn
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
       floatingActionButton: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -44,7 +42,6 @@ class _ChatBotFeatureState extends State<ChatBotFeature> {
                         borderRadius: BorderRadius.all(Radius.circular(50)))),
               )),
 
-          //for adding some space
           const SizedBox(width: 8),
 
           //send button

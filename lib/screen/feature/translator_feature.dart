@@ -10,7 +10,6 @@ import '../../widget/language_sheet.dart';
 
 class TranslatorFeature extends StatefulWidget {
   const TranslatorFeature({super.key});
-
   @override
   State<TranslatorFeature> createState() => _TranslatorFeatureState();
 }

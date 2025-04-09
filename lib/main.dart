@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'apis/app_write.dart';
 import 'helper/global.dart';
 import 'helper/pref.dart';
 import 'screen/splash_screen.dart';
@@ -11,12 +10,6 @@ Future<void> main() async {
 
   // init hive
   await Pref.initialize();
-
-  // for app write initialization
-  AppWrite.init();
-
-  // for initializing facebook ads sdk
-  //AdHelper.init();
 
   await SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
   await SystemChrome.setPreferredOrientations(
@@ -38,7 +31,6 @@ class MyApp extends StatelessWidget {
 
       //dark
       darkTheme: ThemeData(
-          useMaterial3: false,
           brightness: Brightness.dark,
           appBarTheme: const AppBarTheme(
             elevation: 1,
@@ -49,7 +41,6 @@ class MyApp extends StatelessWidget {
 
       //light
       theme: ThemeData(
-          useMaterial3: false,
           appBarTheme: const AppBarTheme(
             elevation: 1,
             centerTitle: true,
@@ -72,5 +63,5 @@ extension AppTheme on ThemeData {
 
   //button color
   Color get buttonColor =>
-      brightness == Brightness.dark ? Colors.cyan.withOpacity(.5) : Colors.blue;
+      brightness == Brightness.dark ? Colors.cyan.withAlpha(128) : Colors.blue;
 }

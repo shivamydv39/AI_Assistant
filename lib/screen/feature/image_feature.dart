@@ -24,7 +24,6 @@ class _ImageFeatureState extends State<ImageFeature> {
       //app bar
       appBar: AppBar(
         title: const Text('AI Image Creator'),
-
         //share btn
         actions: [
           Obx(
@@ -60,7 +59,6 @@ class _ImageFeatureState extends State<ImageFeature> {
             left: mq.width * .04,
             right: mq.width * .04),
         children: [
-          //text field
           TextFormField(
             controller: _c.textC,
             textAlign: TextAlign.center,
@@ -111,7 +109,6 @@ class _ImageFeatureState extends State<ImageFeature> {
           )),
 
           //create btn
-          // CustomBtn(onTap: _c.createAIImage, text: 'Create'),
           CustomBtn(onTap: _c.createAIImage, text: 'Create'),
         ],
       ),

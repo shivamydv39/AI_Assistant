@@ -1,8 +1,6 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../controller/translate_controller.dart';
 import '../helper/global.dart';
 
@@ -32,9 +30,7 @@ class _LanguageSheetState extends State<LanguageSheet> {
       child: Column(
         children: [
           TextFormField(
-            // controller: _c.resultC,
             onChanged: (s) => _search.value = s.toLowerCase(),
-
             onTapOutside: (e) => FocusScope.of(context).unfocus(),
             decoration: const InputDecoration(
                 prefixIcon: Icon(Icons.translate_rounded, color: Colors.blue),
@@ -43,15 +39,12 @@ class _LanguageSheetState extends State<LanguageSheet> {
                 border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(Radius.circular(10)))),
           ),
-
-          //
           Expanded(
             child: Obx(
               () {
                 final List<String> list = _search.isEmpty
                     ? widget.c.lang
-                    : widget.c.lang
-                        .where((e) => e.toLowerCase().contains(_search.value))
+                    : widget.c.lang.where((e) => e.toLowerCase().contains(_search.value))
                         .toList();
 
                 return ListView.builder(

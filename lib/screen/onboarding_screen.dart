@@ -2,7 +2,6 @@ import '../main.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 import 'package:lottie/lottie.dart';
-
 import '../helper/global.dart';
 import '../model/onboard.dart';
 import '../widget/custom_btn.dart';
@@ -41,10 +40,8 @@ class OnboardingScreen extends StatelessWidget {
 
           return Column(
             children: [
-              //lottie
               Lottie.asset('assets/lottie/${list[ind].lottie}.json',
                   height: mq.height * .6, width: isLast ? mq.width * .7 : null),
-
               //title
               Text(
                 list[ind].title,
@@ -95,8 +92,6 @@ class OnboardingScreen extends StatelessWidget {
                   onTap: () {
                     if (isLast) {
                       Get.off(() => const HomeScreen());
-                      // Navigator.of(context).pushReplacement(MaterialPageRoute(
-                      //     builder: (_) => const HomeScreen()));
                     } else {
                       c.nextPage(
                           duration: const Duration(milliseconds: 600),

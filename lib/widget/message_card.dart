@@ -1,7 +1,6 @@
 import '../main.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
-
 import '../helper/global.dart';
 import '../model/message.dart';
 
@@ -13,20 +12,14 @@ class MessageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const r = Radius.circular(15);
-
     return message.msgType == MessageType.bot
-
-        //bot
         ? Row(children: [
             const SizedBox(width: 6),
-
             CircleAvatar(
               radius: 18,
               backgroundColor: Colors.white,
               child: Image.asset('assets/images/logo.png', width: 24),
             ),
-
-            //
             Container(
               constraints: BoxConstraints(maxWidth: mq.width * .6),
               margin: EdgeInsets.only(

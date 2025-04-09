@@ -6,8 +6,6 @@ class Pref {
   static late Box _box;
 
   static Future<void> initialize() async {
-
-
     await Hive.initFlutter();
     _box = await Hive.openBox('myData');
   }
@@ -15,8 +13,6 @@ class Pref {
   static bool get showOnboarding =>
       _box.get('showOnboarding', defaultValue: true);
   static set showOnboarding(bool v) => _box.put('showOnboarding', v);
-
-
 
   //for storing theme data
   static bool get isDarkMode => _box.get('isDarkMode') ?? false;

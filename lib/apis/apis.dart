@@ -8,7 +8,6 @@ import '../helper/global.dart';
 
 
 class APIs {
-
   //get answer from gemini
   static Future<String> getAnswer(String question) async {
     try {

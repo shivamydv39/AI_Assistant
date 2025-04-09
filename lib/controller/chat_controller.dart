@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../apis/apis.dart';
 import '../helper/my_dialog.dart';
 import '../model/message.dart';
@@ -34,7 +33,6 @@ class ChatController extends GetxController {
     }
   }
 
-  //for moving to end message
   void _scrollDown() {
     scrollC.animateTo(scrollC.position.maxScrollExtent,
         duration: const Duration(milliseconds: 500), curve: Curves.ease);
