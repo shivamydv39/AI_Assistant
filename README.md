@@ -38,10 +38,6 @@ An advanced Flutter application combining a **GPT-based chatbot**, **AI image ge
 <img width="293" alt="Screenshot 2025-04-06 at 3 30 02 PM" src="https://github.com/user-attachments/assets/d26867cc-ecf3-4b19-a838-5a18cf2633c8" />
 
 
----
-
-## 📽️ Demo Video
-
 To embed a short video (hosted on GitHub or external platforms like Imgur, Streamable, or YouTube):
 
 ```markdown
